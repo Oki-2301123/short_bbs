@@ -1,4 +1,5 @@
 <?php
+require_once './DB.php';
 $name = htmlspecialchars($_POST['name'] ?? '名無し');
 $comment = htmlspecialchars($_POST['comment'] ?? '');
 $time = date('Y-m-d H:i:s');
