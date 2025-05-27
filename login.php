@@ -15,8 +15,6 @@
             <p>パスワード<input type="password" name="password" method="post"></p>
             <p><button type="submit">ログイン</button></p>
 
-
-
 </body>
 
 </html>

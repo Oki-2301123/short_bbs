@@ -13,5 +13,3 @@ file_put_contents('comments.txt', $entry, FILE_APPEND);
 header("Location: view.php");
 exit;
 ?>
-
-//ara
