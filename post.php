@@ -10,6 +10,7 @@ if (trim($comment) === '') {
 }
 //DBに追加
 $pdo = DB();
+var_dump($pdo);
 $sql = $pdo->prepare('INSERT INTO comment (user_id, content) 
                     VALUES (?, ?)');
 $sql->execute([1, $comment]);
