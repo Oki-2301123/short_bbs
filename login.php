@@ -14,7 +14,7 @@
             <p>ユーザネーム:<input type="text" name="username" method="post"></p>
             <p>パスワード<input type="password" name="password" method="post"></p>
             <p><button type="submit">ログイン</button></p>
-
+        </from>
 </body>
 
 </html>
