@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>📜 投稿管理</h1>
-    <p><a href="form.php">← 投稿フォームへ戻る</a></p>
+    <p><a href="form.php">← 投稿一覧へ戻る</a></p>
     <hr>
     <?php
 $filename = 'comments.txt';

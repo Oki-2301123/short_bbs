@@ -8,6 +8,7 @@
 <body>
     <h1>📜 投稿一覧</h1>
     <p><a href="form.php">← 投稿フォームへ戻る</a></p>
+    <p><a href="viewkannri.php">投稿管理を見る →</a></p>
     <hr>
     <?php
     $filename = 'comments.txt';
