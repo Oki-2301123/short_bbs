@@ -8,6 +8,7 @@ if (trim($comment) === '') {
     header("Location: form.php");
     exit;
 }
+$pdo = DB();
 $sql = $pdo->prepare('INSERT INTO comment (user_id, content, created_at) 
                     VALUES (?, ?, ?)');
 $sql->execute([1, $comment, $time]);
