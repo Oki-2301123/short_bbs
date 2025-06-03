@@ -14,5 +14,9 @@
         <p><button type="submit">投稿する</button></p>
     </form>
     <p><a href="view.php">▶ 投稿一覧を見る</a></p>
+
+    <form action="logout.php" method="post">
+        <button type="submit">ログアウト</button>
+    </form>
 </body>
 </html>
