@@ -13,9 +13,9 @@ session_start();
 <body>
     <?php
     if (isset($_SESSION['username'])) {
-        echo $_SESSION['username'], '<br>';
+        echo $_SESSION['username'];
         echo '&nbsp;<form action="logout.php" method="post">
-        <button type="submit">ログアウト</button>
+        <button type="submit" style="display:inline;">ログアウト</button>
     </form>';
     }
     ?>
