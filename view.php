@@ -1,10 +1,23 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>一言掲示板 - 投稿一覧</title>
     <link rel="stylesheet" href="css/style.css">
+    <?php
+    if (isset($_SESSION['username'])) {
+        echo $_SESSION['username'];
+        echo '<form action="logout.php" method="post">
+        <button type="submit">ログアウト</button>
+    </form>';
+    }
+    ?>
 </head>
+
 <body>
     <h1>📜 投稿一覧</h1>
     <p><a href="form.php">← 投稿フォームへ戻る</a></p>
@@ -25,4 +38,5 @@
     }
     ?>
 </body>
+
 </html>
