@@ -10,15 +10,9 @@ if (trim($comment) === '') {
 }
 //DBに追加
 $pdo = DB();
-var_dump($pdo);
 $sql = $pdo->prepare('INSERT INTO comment (user_id, content) 
                     VALUES (?, ?)');
 $sql->execute([1, $comment]);
-if ($sql) {
-    echo "成功しました";
-} else {
-    echo "失敗しました";
-}
 
 //ファイルに追加
 $entry = "$time\t$name\t$comment\n";
