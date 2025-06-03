@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,7 +11,7 @@
 <body>
     <h1>💬 一言掲示板</h1>
     <form action="post.php" method="post">
-        <p>名前：<input type="text" name="name" required></p>
+        <p>名前：<input type="text" name="name" value="<?php echo htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?>" required></p>
         <p>コメント：<br>
         <textarea name="comment" rows="4" cols="40" required></textarea></p>
         <p><button type="submit">投稿する</button></p>
