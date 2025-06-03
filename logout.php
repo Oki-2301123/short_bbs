@@ -10,5 +10,5 @@ if (isset($_COOKIE['PHPSESSID'])) {
 }
 //セッションを破棄する
 session_destroy();
-header('Location: ./login.php');
+header('Location: login.php');
 exit();
