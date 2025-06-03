@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -9,7 +12,6 @@
 
 <body>
     <?php
-    session_start();
     $_SESSION['username'] = $_POST['username'];
     $_SESSION['password'] = $_POST['password'];
 
